@@ -1,6 +1,8 @@
 {
   "name": "tic-tac-toe",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "author": "Fortune Alebiosu",
+  "description": "A simple tic tac toe game made with Angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

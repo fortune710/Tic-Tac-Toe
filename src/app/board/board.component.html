@@ -7,14 +7,14 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <h1 style="color: white; font-family: Arial, Helvetica, sans-serif; text-align: center;">
-        Current Player: {{ player }}</h1>
-
-    <button id="new-game" (click)="newGame()">START NEW GAME</button>
+    <h1>Current Player: {{ player }}</h1>
+    <div class="container">
+        <div id="new-game" (click)="newGame()">START NEW GAME</div>
+    </div>
     <h2 *ngIf="winner">
         Player using {{winner}} won the game!
     </h2>
-
+    
     <main>
         <app-square *ngFor="let val of squares; let i=index"
                     [value]="val" (click)="makeMove(i)">
@@ -22,8 +22,7 @@
         </app-square>
     </main>
 
-    <h3 style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">
-        Tic Tac Toe. Made by Fortune Alebiosu</h3>
+    <h3>Tic Tac Toe. Made by Fortune Alebiosu</h3>
     
 </body>
 </html>
